@@ -1,0 +1,56 @@
+extends master.pug
+
+block body
+    br
+    div(class="row")
+        table(class="table table-bordered table-hover align-middle")
+            thead(class="thead-inverse")
+                tr
+                    th Field Name
+                    th Operation
+                    th Field Contents
+                    th Confirm Selection
+            tbody
+                tr
+                    td
+                        select(class="form-control") 
+                            option(selected) Fieldname...
+                            option Income_Code
+                            option Income_Description
+                    td
+                        select(class="form-control") 
+                            option(selected) Operation...
+                            option Contains
+                            option Does Not Contain  
+                            option Is Equal To
+                            option Is Not Equal To 
+                            option Is Between
+                            option Is Not Between                 
+                    td
+                        select(class="form-control")
+                            option(selected) Value...
+                            option A
+                            option B
+                            option C
+                            option D
+                    td
+                        button(type="button" class="btn btn-success") Add To Query
+
+    br
+    div(class="row")
+        table(class="table table-bordered table-hover align-middle")
+            thead(class="thead-inverse")
+                tr
+                    th Selection Number
+                    th Field Name
+                    th Operation
+                    th Field Contents
+                    th Delete Selection?
+            tbody
+                tr
+                    th(scope="row") 1
+                    td Income_Code
+                    td Is Between                   
+                    td C AND F
+                    td
+                        button(type="button" class="btn btn-danger") Delete Select
