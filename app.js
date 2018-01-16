@@ -5,7 +5,6 @@ const router = express.Router();
 
 
 app.use(router) //create an instance of router
-const routes = require('./router.js')
 router.get( '/', (req,res) => {res.render('index') })
 router.get( '/compDataSel', (req,res) => {res.render('compDataSel') })
 

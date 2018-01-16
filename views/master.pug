@@ -5,23 +5,26 @@ html
         title= title
         link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet")
         link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous")
+        link(href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Orbitron" rel="stylesheet")
         link(rel="stylesheet" href="static/css/master.css")
+        
     body
-        
-        nav(class="navbar navbar-inverse bg-inverse")
-            a(class="navbar-brand" href="/") Quantum
-                //- TODO: Add img(src="static/blahblah/logo (30x30")
-        
+        nav(class="navbar navbar-toggleable-md navbar-inverse bg-inverse")
+            a(class="navbar-brand" href="/")
+                img(src="static/img/logoInverse.png" width=30 height=30 class="d-inline-block align-top") 
+                span(id="navbarTitle") &nbsp QUANTUM
+            button(class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup")
+                span(class="navbar-toggler-icon")
+            div(class="collapse navbar-collapse" id="navbarNavAltMarkup")
+                div(class="navbar-nav")
+                    a(class="nav-item nav-link" href="/compDataSel") Consumer Compiled Viewer
+                    a(class="nav-item nav-link" href="#")
+                    a(class="nav-item nav-link disabled" href="#")
+
+
         br
         div(class="container")
             block body
-        footer(class="footer")
-            div(class="container")
-                br
-                p(class="text-muted") That's a really nice footer you got there  
-                    i(class="fa fa-coffee")
-
-
 
 
         script(src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous")

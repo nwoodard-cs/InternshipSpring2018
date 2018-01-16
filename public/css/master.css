@@ -4,21 +4,56 @@
 } */
 
 
-/* STICKY FOOTER STYLES */
+
+
+/*
+ _______              
+|__   __|             
+   | | __ _  __ _ ___ 
+   | |/ _` |/ _` / __|
+   | | (_| | (_| \__ \
+   |_|\__,_|\__, |___/
+             __/ |    
+            |___/       
+*/   
+
 
 html {
     position: relative;
     min-height: 100%;
   }
   body {
-    /* Margin bottom by footer height */
-    margin-bottom: 60px;
+    font-size: 1em;
+    font-family: 'Roboto';
+    margin-bottom: 60px; /* Margin bottom by footer height */
   }
-  .footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    /* Set the fixed height of the footer here */
-    height: 60px;
-    background-color: #f5f5f5;
+
+
+
+
+
+/*   _____ _                         
+  / ____| |                        
+ | |    | | __ _ ___ ___  ___  ___ 
+ | |    | |/ _` / __/ __|/ _ \/ __|
+ | |____| | (_| \__ \__ \  __/\__ \
+  \_____|_|\__,_|___/___/\___||___/
+*/
+  .nav {
+    color:#FFF
+  }
+                                  
+
+/*
+   _____ _____      
+  |_   _|  __ \     
+    | | | |  | |___ 
+    | | | |  | / __|
+   _| |_| |__| \__ \
+  |_____|_____/|___/
+                    
+*/                  
+
+  #navbarTitle {
+    font-family: 'Orbitron'
   }
