@@ -9,18 +9,20 @@ const sql = require('mssql') //SQL Server interaction
 const app = express() //rename express to app
 const router = express.Router(); //rename express.Router for easier access
 
-//Page Modules
-const compDataSelMod = require('./modules/compDataSel.js')
-compDataSelMod.LaunchSP() //This line successfully calls the LaunchSP export in compDataSel.js
-
-
 app.use(helmet()) //instantiate helmet
 app.use(router) //create an instance of router
 
 router.get( '/', (req,res) => {res.render('index') })
 //const index = require('index.js') // TODO: decide if you want to split files out like this
 
-router.get( '/compDataSel', (req,res) => {res.render('compDataSel') })
+
+
+
+
+//Page Modules
+const compDataSelMod = require('./modules/compDataSel.js')
+//let initCompData = compDataSelMod.LaunchSP() //This line successfully calls the LaunchSP export in compDataSel.js
+router.get( '/compDataSel', (req,res) => { res.render('compDataSel', {initCompData: compDataSelMod.LaunchSP()}) })
 
 
 
